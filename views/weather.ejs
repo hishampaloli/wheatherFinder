@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAPI</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="heading" class="box2 ">Weather Map </h1>
+
+    <div class="box">
+        <h2 class="box1" id="heading" > Selected City  : <span><%= city %> </span>  </h2>
+        <form action="/" method="POST">
+            <input type="text" id="cityInp" name="cityName" placeholder="Type your City name">
+            <button type="submit">+</button>
+            
+            </form>
+
+        
+
+           
+
+            <h2 class="box1"> Temprature  : <%= title %> </h2>
+            <h2 class="box1"> Description : <%= dicription  %> </h2>
+            <h2 class="box1"> Pressure : <%= pressure %> </h2>
+            <h2 class="box1"> Humidity : <%= humidity %> </h2>
+    </div>
+
+    <div class="box" >
+        <h2 class="box3" id="heading1">About</h2>
+        <p class="item">This is a small Weather Map which will fetch weather datas through a API request.</p>
+    </div>
+ 
+    
+    <footer> made by Hisham paloli. <br>
+        <i class="fas fa-copyright"> ThinkTwiceCodeOnce</i>
+      </footer>
+
+
+</body>
+</html>
